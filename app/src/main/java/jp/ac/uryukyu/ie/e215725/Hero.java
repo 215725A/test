@@ -9,10 +9,10 @@ package jp.ac.uryukyu.ie.e215725;
  * Created by tnal on 2016/11/13.
  */
 public class Hero {
-    public String name;
-    public int hitPoint;
-    public int attack;
-    public boolean dead;
+    private String name;
+    private int hitPoint;
+    private int attack;
+    private boolean dead;
 
     /**
      * コンストラクタ。名前、最大HP、攻撃力を指定する。
@@ -35,7 +35,7 @@ public class Hero {
      */
     public void attack(Enemy e){
         int damage = (int)(Math.random() * attack);
-        System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", name, e.name, damage);
+        System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", name, e.getName(), damage);
         e.wounded(damage);
     }
 
@@ -50,5 +50,73 @@ public class Hero {
             dead = true;
             System.out.printf("勇者%sは道半ばで力尽きてしまった。\n", name);
         }
+    }
+    
+    //ここから下はアクセサメソッド(ゲッター)
+
+    /** 
+     * 自身の名前を取得するアクセサメソッド
+     * @return ヒーロー名
+    */
+    public String getName(){
+        return this.name;
+    }
+
+    /**
+     * 自身のHPを取得するアクセサメソッド
+     * @return ヒーロのHP
+     */
+    public int getHitPoint(){
+        return this.hitPoint;
+    }
+
+    /**
+     * 自身の攻撃力を取得するアクセサメソッド
+     * @return ヒーローの攻撃力
+     */
+    public int getAttack(){
+        return this.attack;
+    }
+
+    /**
+     * 自身の死亡判定を取得するアクセサメソッド
+     * @return 死亡判定
+     */
+    public boolean getDead(){
+        return this.dead;
+    }
+
+    //ここから下はアクセサメソッド(セッター)
+
+    /**
+     * ヒーロー名を設定するアクセサメソッド
+     * @param inputName 入力されたヒーロー名
+     */
+    public void setName(String inputName){
+        this.name = inputName;
+    }
+
+    /**
+     * ヒーローのHPを設定するアクセサメソッド
+     * @param inputHitPoint 入力されたヒーローのHP
+     */
+    public void setHitPoint(int inputHitPoint){
+        this.hitPoint = inputHitPoint;
+    }
+
+    /**
+     * ヒーローの攻撃力を設定するアクセサメソッド
+     * @param inputAttack 入力されたヒーローの攻撃力
+     */
+    public void setAttack(int inputAttack){
+        this.attack = inputAttack;
+    }
+
+    /**
+     * 死亡判定を設定するアクセサメソッド
+     * @param boolDead 死亡判定
+     */
+    public void setDead(boolean boolDead){
+        this.dead = boolDead;
     }
 }
