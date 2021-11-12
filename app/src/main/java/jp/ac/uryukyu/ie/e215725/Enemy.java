@@ -55,7 +55,7 @@ public class Enemy {
     }
 
     /**
-     * 自身の名前を取得するアクセサメソッド
+     * 自身の名前を取得する
      * @return モンスター名
      */
     public String getName(){
@@ -63,10 +63,10 @@ public class Enemy {
     }
 
 
-    //ここから下はアクセサメソッド(ゲッター)
+    //ここから下はゲッター
 
     /**
-     * 自身のHPを取得するアクセサメソッド
+     * 自身のHPを取得する
      * @return モンスターのHP
      */
     public int getHitPoint(){
@@ -74,7 +74,7 @@ public class Enemy {
     }
 
     /**
-     * 自身の攻撃力を取得するアクセサメソッド
+     * 自身の攻撃力を取得する
      * @return モンスターの攻撃力
      */
     public int getAttack(){
@@ -82,17 +82,17 @@ public class Enemy {
     }
 
     /**
-     * 自身の死亡判定を取得するアクセサメソッド
+     * 自身の死亡判定を取得する
      * @return 死亡判定
      */
     public boolean getDead(){
         return this.dead;
     }
 
-    //ここから下はアクセサメソッド(セッター)
+    //ここから下はセッター
 
     /**
-     * モンスター名を設定するアクセサメソッド
+     * モンスター名を設定する
      * @param inputName 入力したモンスター名
      */
     public void setName(String inputName){
@@ -100,7 +100,7 @@ public class Enemy {
     }
 
     /**
-     * モンスターのHPを設定するアクセサメソッド
+     * モンスターのHPを設定する
      * @param inputHitPoint 入力されたモンスターのHP
      */
     public void setHitPoint(int inputHitPoint){
@@ -108,7 +108,7 @@ public class Enemy {
     }
 
     /**
-     * モンスターの攻撃力を設定するアクセサメソッド
+     * モンスターの攻撃力を設定する
      * @param inputAttack 入力されたモンスターの攻撃力
      */
     public void setAttack(int inputAttack){
@@ -116,7 +116,7 @@ public class Enemy {
     }
 
     /**
-     * 死亡判定を設定するアクセサメソッド
+     * 死亡判定を設定する
      * @param boolDead 死亡判定
      */
     public void setDead(boolean boolDead){

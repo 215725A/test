@@ -52,10 +52,10 @@ public class Hero {
         }
     }
     
-    //ここから下はアクセサメソッド(ゲッター)
+    //ここから下はゲッター
 
     /** 
-     * 自身の名前を取得するアクセサメソッド
+     * 自身の名前を取得する
      * @return ヒーロー名
     */
     public String getName(){
@@ -63,7 +63,7 @@ public class Hero {
     }
 
     /**
-     * 自身のHPを取得するアクセサメソッド
+     * 自身のHPを取得する
      * @return ヒーロのHP
      */
     public int getHitPoint(){
@@ -71,7 +71,7 @@ public class Hero {
     }
 
     /**
-     * 自身の攻撃力を取得するアクセサメソッド
+     * 自身の攻撃力を取得する
      * @return ヒーローの攻撃力
      */
     public int getAttack(){
@@ -79,17 +79,17 @@ public class Hero {
     }
 
     /**
-     * 自身の死亡判定を取得するアクセサメソッド
+     * 自身の死亡判定を取得する
      * @return 死亡判定
      */
     public boolean getDead(){
         return this.dead;
     }
 
-    //ここから下はアクセサメソッド(セッター)
+    //ここから下はセッター
 
     /**
-     * ヒーロー名を設定するアクセサメソッド
+     * ヒーロー名を入力された名前に変更する
      * @param inputName 入力されたヒーロー名
      */
     public void setName(String inputName){
@@ -97,7 +97,7 @@ public class Hero {
     }
 
     /**
-     * ヒーローのHPを設定するアクセサメソッド
+     * ヒーローのHPを入力されたHPに変更する
      * @param inputHitPoint 入力されたヒーローのHP
      */
     public void setHitPoint(int inputHitPoint){
@@ -105,7 +105,7 @@ public class Hero {
     }
 
     /**
-     * ヒーローの攻撃力を設定するアクセサメソッド
+     * ヒーローの攻撃力を入力された攻撃力に変更する
      * @param inputAttack 入力されたヒーローの攻撃力
      */
     public void setAttack(int inputAttack){
@@ -113,7 +113,7 @@ public class Hero {
     }
 
     /**
-     * 死亡判定を設定するアクセサメソッド
+     * 死亡判定をする
      * @param boolDead 死亡判定
      */
     public void setDead(boolean boolDead){
