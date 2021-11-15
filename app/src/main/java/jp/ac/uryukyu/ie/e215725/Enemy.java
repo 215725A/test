@@ -92,15 +92,15 @@ public class Enemy {
     //ここから下はセッター
 
     /**
-     * モンスター名を設定する
-     * @param inputName 入力したモンスター名
+     * モンスター名を入力した名前に変更する
+     * @param inputName 入力されたモンスター名
      */
     public void setName(String inputName){
         this.name = inputName;
     }
 
     /**
-     * モンスターのHPを設定する
+     * モンスターのHPを入力されたHPに変更する
      * @param inputHitPoint 入力されたモンスターのHP
      */
     public void setHitPoint(int inputHitPoint){
@@ -108,7 +108,7 @@ public class Enemy {
     }
 
     /**
-     * モンスターの攻撃力を設定する
+     * モンスターの攻撃力を入力された攻撃力に変更する
      * @param inputAttack 入力されたモンスターの攻撃力
      */
     public void setAttack(int inputAttack){
